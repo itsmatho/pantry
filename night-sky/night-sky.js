@@ -48,7 +48,6 @@ function draw() {
   ctx.fill();
   ctx.restore();
 
-  // let moonspotColor = '#454b56';
   let moonspotColor = '#687282';
   let moonspotSize = moonRadius * 0.2;
   let minSpotSize = Math.max(Math.max(1, moonspotSize / 5), moonspotSize / 4);
@@ -79,7 +78,6 @@ function draw() {
 
   // Draw star relative to the center
   let drawStar = (x, y) => {
-    // let radius = Math.random() >= 0.5 ? 2 : 1;
     let radius = parseInt(1 + Math.random() * 2.5);
     let color = Math.random() >= 0.5 ? starColor : lightColor;
     x += center.x;
